@@ -1,5 +1,7 @@
 import adapter from "@sveltejs/adapter-auto";
+import Lenis from '@studio-freight/lenis';
 import {vitePreprocess} from "@sveltejs/kit/vite";
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
@@ -8,3 +10,5 @@ const config = {
 	preprocess: vitePreprocess(),
 };
 export default config;
+
+

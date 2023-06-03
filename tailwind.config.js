@@ -4,14 +4,15 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				'inter':['Inter','sans-serif']
+				'inter': ['Inter', 'sans-serif']
 			},
-      colors: {
-        'glass-grey': '#161616',
-      },
-      backgroundImage: {
-        'hero': "url('/wallpaper-gradient.jpg')"
-      }
+			colors: {
+				'glass-grey': '#101010',
+				'yellow-vivid': '#E2E701'
+			},
+			backgroundImage: {
+				'about-wallpaper' : 'url("/wallpaper-about.jpg")'
+			}
 		}
 	},
 	plugins: [],
