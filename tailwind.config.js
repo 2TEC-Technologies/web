@@ -7,12 +7,13 @@ export default {
 				'inter': ['Inter', 'sans-serif']
 			},
 			colors: {
-				'glass-grey': '#101010',
-				'yellow-vivid': '#E2E701'
+				'glass-grey': 'rgba(10,10,10,0.50)',
+				'yellow-vivid': '#E2E701',
+				'blur-grey' : 'rgba(16, 16, 16, 0.15)'
 			},
 			backgroundImage: {
-				'about-wallpaper' : 'url("/wallpaper-about.jpg")'
-			}
+				'about-wallpaper': 'url("/wallpaper-about.jpg")'
+			},
 		}
 	},
 	plugins: [],

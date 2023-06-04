@@ -1,3 +1,9 @@
+<script>
+    import Nav from "../components/nav.svelte";
+</script>
+
+<Nav></Nav>
+
 <svelte:head>
 	<title>2 T E C</title>
 </svelte:head>
@@ -16,10 +22,6 @@
 		<h1 class="text-white text-9xl font-inter">2TEC</h1>
 	</div>
 </div>
-
-<script>
-
-</script>
 
 <style lang="postcss">
 	:global(html) {
