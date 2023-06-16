@@ -28,10 +28,12 @@
         </p>
     </div>
 </div>
-<div class="h-screen bg-yellow-vivid">
+<!-- Diseñar la otra parte -->
+<div class="h-screen bg-about-wallpaper">
     <h2>Hola me llamo Paco</h2>
 </div>
 
+<!-- Custom style -->
 <style>
     .animate {
         animation-duration: 0.75s;

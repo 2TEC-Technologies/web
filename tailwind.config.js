@@ -9,7 +9,9 @@ export default {
 			colors: {
 				'glass-grey': 'rgba(10,10,10,0.50)',
 				'yellow-vivid': '#E2E701',
-				'blur-grey' : 'rgba(16, 16, 16, 0.15)'
+				'blur-grey' : 'rgba(16, 16, 16, 0.15)',
+				'dark-grey' : '#1D1D1FB3',
+				'white-smooth' : '#F5F5F7'
 			},
 			backgroundImage: {
 				'about-wallpaper': 'url("/wallpaper-about.jpg")'
