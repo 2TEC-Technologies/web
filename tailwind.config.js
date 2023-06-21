@@ -16,6 +16,7 @@ export default {
         "smooth-gray": "#D1D1D1",
         "nav-bg": "#090909",
         "nav-text": "#818181",
+		"nav-h" : "#979797",
         gb: "#1C1C1C",
         "p-button-dark": "#1F1F1F",
         "p-button-bg": "#FBFF28",

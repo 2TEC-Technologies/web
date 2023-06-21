@@ -9,19 +9,19 @@
 <Nav></Nav>
 
 <div
-    class="flex hero justify-center align-middle flex-col bg-nav-bg bg-no-repeat bg-center bg-cover bg-fixed bg-black font-inter"
+    class="flex hero justify-center align-middle flex-col bg-nav-bg bg-no-repeat bg-center bg-cover bg-fixe font-inter"
 >
     <div
         class="flex flex-col justify-items-center h-2/5 justify-center self-center px-10"
     >
         <h2
-            class="items-center text-6xl md:text-8xl font-bold tracking-tighter leading-[89.02%] text-slate-100 self-center text-center font-inter duration-700 animate animate-glow"
+            class="items-center text-[64px] lg:text-[128px] font-bold tracking-tighter leading-[89.02%] text-slate-100 self-center lg:text-center text-left font-inter duration-700 animate animate-glow"
         >
             Shoot for the <span class="text-yellow-vivid">stars</span>, <br /> aim
             for the moon.
         </h2>
         <p
-            class="text-slate-300 text-center text-2xl font-medium my-4
+            class="text-slate-300 lg:text-center text-left text-[20px] lg:text-[48px] font-medium my-4
                     tracking-tighter md:text-3xl animate animate-glow"
         >
             Where good ideas take place.
