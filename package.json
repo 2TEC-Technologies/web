@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@studio-freight/lenis": "^1.0.14"
+		"@studio-freight/lenis": "^1.0.14",
+		"tailwindcss-animated": "^1.0.1"
 	}
 }
