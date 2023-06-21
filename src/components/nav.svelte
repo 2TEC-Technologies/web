@@ -1,14 +1,12 @@
 <!-- Main navbar -->
 <div class="block lg:flex box-border bg-nav-bg items-center justify-between border-b border-gb">
-<!-- PASAR LOS BOTONES ABAJO CUANDO lg:ns que
-    ARRIBA LOGO 2TEC Y ABAJO LOS BOTONES -->
-    
-<!-- BORRAR LOS PADDING LEFT Y RIGHT-->
+
         <div class="nav items-center align-center">
             <div class="flex align-center">
             <h1 class="antialiased text-white">2TEC</h1>
             </div>
-            <div> 
+            <!-- div normal-->
+            <div class="hidden lg:block"> 
                 <ul class="flex text-sm items-center justify-end gap-6 content-center">
                     <li class="antialiased text-nav-text"> About Us </li>
                     <li class="antialiased text-nav-text"> News </li>
@@ -16,6 +14,7 @@
                     <li class="antialiased rounded-full text-p-button-dark self-center p-button bg-p-button-bg"> Contact </li>
                 </ul>
             </div>
+            <!-- div mobile-->
         </div>
         
         
