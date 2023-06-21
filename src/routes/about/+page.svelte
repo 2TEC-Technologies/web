@@ -9,7 +9,7 @@
 <Nav></Nav>
 
 <div
-    class="flex justify-center align-middle flex-col h-screen bg-about-wallpaper bg-no-repeat bg-center bg-cover bg-fixed bg-black font-inter"
+    class="flex hero justify-center align-middle flex-col bg-nav-bg bg-no-repeat bg-center bg-cover bg-fixed bg-black font-inter"
 >
     <div
         class="flex flex-col justify-items-center h-2/5 justify-center self-center px-10"
@@ -35,6 +35,11 @@
 
 <!-- Custom style -->
 <style>
+    
+    .hero {
+        height: calc(100vh - 9vh);
+    }
+
     .animate {
         animation-duration: 0.75s;
         animation-delay: 0.5s;
