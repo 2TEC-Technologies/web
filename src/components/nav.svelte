@@ -1,25 +1,52 @@
-<div class="flex fixed nav font-sans">
-    <div
-        class="flex justify-around backdrop-blur-md  bg-dark-grey fixed border-slate-400 w-[95%] nav border top-5 left-1/2 translate-x-[-50%] rounded-full items-center"
-    >
-        <div class="logo">
-            <a class="logo transition text-slate-50 font-medium text-[16px]" href="/">2TEC</a>
+<!-- Main navbar -->
+<div class="block lg:flex box-border bg-nav-bg items-center justify-between border-b border-gb">
+<!-- PASAR LOS BOTONES ABAJO CUANDO lg:ns que
+    ARRIBA LOGO 2TEC Y ABAJO LOS BOTONES -->
+    
+<!-- BORRAR LOS PADDING LEFT Y RIGHT-->
+        <div class="nav items-center align-center">
+            <div class="flex align-center">
+            <h1 class="antialiased text-white">2TEC</h1>
+            </div>
+            <div> 
+                <ul class="flex text-sm items-center justify-end gap-6 content-center">
+                    <li class="antialiased text-nav-text"> About Us </li>
+                    <li class="antialiased text-nav-text"> News </li>
+                    <li class="antialiased text-nav-text"> Work </li>
+                    <li class="antialiased rounded-full text-p-button-dark self-center p-button bg-p-button-bg"> Contact </li>
+                </ul>
+            </div>
         </div>
-        <div class="buttons flex justify-end gap-x-8 w-3/4 items-center">
-            <a class="text-smooth-gray transition text-[14px] font-normal" href="/about">About</a>
-            <a class="contact rounded-md bg-yellow-vivid text-dark-grey text-[14px] text-gray" href="/contact">Contact</a>
+        
+        
+</div>
+<!-- News navbar -->
+<div class="block text-sm lg:flex box-border bg-nav-bg items-center justify-between border-b border-gb">
+    <div class="nav items-center align-center">
+            <h3 class="text-nav-text"> News title </h3>
+            <a href="https://www.google.com" class="text-p-button-bg">Learn more</a>
         </div>
-    </div>
 </div>
 
-<style>
-    .nav {
-        padding: 12px 32px;
-    }
+<style is:global>
 
+    :root {
+        --sizes-pageWidth: 1200px;
+    }
     
-
-    .contact {
-        padding: 6px 12px;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 36px;
+        width: 100%;
+        max-width: var(--sizes-pageWidth);
+        margin: 0px auto;
+        position: relative;
+        z-index: 99999;
     }
+
+    .p-button {
+        padding: 4px 16px;
+    }
+
 </style>
