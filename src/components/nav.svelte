@@ -1,13 +1,33 @@
-<!-- JS code -->
 <script>
     let isMenuOpen = false;
-    let hButton;
+    let name = 'menu-outline';
 
     function showMenu() {
         isMenuOpen = !isMenuOpen;
         console.log(isMenuOpen);
+
+        // cambio de icono (de = a x)
+        if (name == 'menu-outline') {
+            name = 'close-outline'
+        }
+        else {
+            name = 'menu-outline'
+        }
+        
     }
 </script>
+
+<svelte:head>
+    <!-- Ionicons script -->
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+</svelte:head>
 
 <!-- Main navbar -->
 <div
@@ -52,9 +72,8 @@
             <!-- svelte-ignore a11y-click-events-have-key-events -->
             <span class="text-nav-text text-3xl">
                 <ion-icon
-                    bind:this={hButton}
                     class="nav-button"
-                    name="menu-outline"
+                    {name}
                     on:click={showMenu}
                 />
             </span>
@@ -64,7 +83,7 @@
 
 <!-- onClick menu hamburguer menu -->
 <div class:open={isMenuOpen} class="h-menu">
-    <ul class="flex flex-col pl-8 gap-4 pt-4">
+    <ul class="flex flex-col pl-9 gap-4 pt-4">
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <li class="text-nav-text" on:click={() => (isMenuOpen = false)}>
             <a href="/about">About</a>
