@@ -4,9 +4,17 @@
 
 <svelte:head>
     <title>2TEC | ABOUT US</title>
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 </svelte:head>
 
-<Nav></Nav>
+<Nav />
 
 <div
     class="flex hero justify-center align-middle flex-col bg-nav-bg bg-no-repeat bg-center bg-cover bg-fixe font-inter"
@@ -35,7 +43,6 @@
 
 <!-- Custom style -->
 <style>
-    
     .hero {
         height: calc(100vh - 9vh);
     }

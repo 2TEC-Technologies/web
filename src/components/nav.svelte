@@ -1,6 +1,17 @@
+<!-- JS code -->
+<script>
+    let isMenuOpen = false;
+    let hButton;
+
+    function showMenu() {
+        isMenuOpen = !isMenuOpen;
+        console.log(isMenuOpen);
+    }
+</script>
+
 <!-- Main navbar -->
 <div
-    class="block lg:flex box-border bg-nav-bg items-center justify-between border-b border-gb h-[48px]"
+    class="z-50 block sticky top-0 lg:flex box-border bg-nav-bg items-center justify-between border-b border-gb h-[48px]"
 >
     <!-- Contenedor principal (para centrarlo)-->
     <div class="nav items-center align-center h-full">
@@ -35,10 +46,42 @@
         </div>
 
         <!-- Navbar responsive (burguer menu)-->
-        <div class="block text-base lg:text-sm lg:hidden self-center">
-            <img src="/burger-nav.svg" alt="" srcset="" />
+        <div
+            class="block text-base lg:text-sm lg:hidden self-center cursor-pointer items-center"
+        >
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <span class="text-nav-text text-3xl">
+                <ion-icon
+                    bind:this={hButton}
+                    class="nav-button"
+                    name="menu-outline"
+                    on:click={showMenu}
+                />
+            </span>
         </div>
     </div>
+</div>
+
+<!-- onClick menu hamburguer menu -->
+<div class:open={isMenuOpen} class="h-menu">
+    <ul class="flex flex-col pl-8 gap-4 pt-4">
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <li class="text-nav-text" on:click={() => (isMenuOpen = false)}>
+            <a href="/about">About</a>
+        </li>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <li class="text-nav-text" on:click={() => (isMenuOpen = false)}>
+            <a href="/news">News</a>
+        </li>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <li class="text-nav-text" on:click={() => (isMenuOpen = false)}>
+            <a href="/work">Work</a>
+        </li>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <li class="text-nav-text" on:click={() => (isMenuOpen = false)}>
+            <a href="/contact">Contact</a>
+        </li>
+    </ul>
 </div>
 
 <!-- News navbar -->
@@ -59,6 +102,19 @@
         --sizes-pageWidth: 1200px;
     }
 
+    .h-menu {
+        display: none;
+    }
+
+    .h-menu.open {
+        display: block;
+        position: fixed;
+        height: 100vh;
+        width: 100vh;
+        z-index: 300;
+        background-color: #090909;
+    }
+
     .nav {
         display: flex;
         justify-content: space-between;
@@ -67,7 +123,6 @@
         max-width: var(--sizes-pageWidth);
         margin: 0px auto;
         position: relative;
-        z-index: 99999;
     }
 
     .p-button {
