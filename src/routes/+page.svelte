@@ -16,12 +16,5 @@
 </div>
 
 <style lang="postcss">
-<<<<<<< HEAD
-	:global(html) {
-		background-color: theme(colors.gray.100);
-	}
-</style>
-=======
 	
 </style>
->>>>>>> sidney
