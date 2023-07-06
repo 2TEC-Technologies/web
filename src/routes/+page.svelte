@@ -1,9 +1,3 @@
-<script>
-    import Nav from "../components/nav.svelte";
-</script>
-
-<Nav></Nav>
-
 <svelte:head>
 	<title>2 T E C</title>
 </svelte:head>
